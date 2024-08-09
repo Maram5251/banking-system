@@ -1,0 +1,207 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    position: relative;
+    min-height: 100vh; 
+}
+
+.background {
+    position: fixed; /* Cover the entire viewport */
+    top: 0;
+    left: 0;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-image: url("Bank.jpg");
+    z-index: 0; /* Backgrounds behind everything */
+}
+
+.bank-image{
+    width: 25%;
+    height:25%;
+    z-index: 1;
+    position:relative;
+    margin-top: 15px;
+    margin-left: 15px;
+    border-radius: 15px;
+    min-width: 500px;
+}
+.main-content {
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+#MyH1 { 
+    font-size: 50px;
+    color: darkblue;
+    text-align: center;
+    transition: color 0.3s;
+    cursor: pointer;
+    margin: 0;
+    z-index: 1;
+    position:relative;
+    margin-bottom: 50px;
+    margin-right: 20px;
+}
+
+#MyH1:hover {
+    color: cornflowerblue;
+}
+
+.buttons div {
+    margin-bottom: 10px;
+}
+
+.buttons {
+    flex-direction: column;
+    gap: 100px;
+    z-index: 1;
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+    margin-left: 100px;
+    min-width: 150px;
+}
+
+button {
+    text-shadow: rgb(12, 4, 19);
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 35px;
+    font-weight: bold;
+    color: rgb(10, 1, 18);
+    background-color: transparent;
+    border-radius: 10px;
+    border: 2px solid black;
+    padding: 10px 20px; /* Add padding for better button size */
+    cursor: pointer;
+    display: block;
+    text-align: center;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+.box {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    min-width: 300px;
+}
+
+#account_form {
+    display: none;
+    flex-direction: column;
+    width: 300px;
+}
+
+#submit_button, #resetBtn {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 300px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+#text{
+    position: relative;
+    z-index: 1;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+#frm{
+    display: none;
+}
+.form label{
+font-size: large;
+font-weight: bold;
+}
+#output {
+    display: block;
+    margin: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    z-index: 1;
+    position:relative;
+    align-items: center;
+    background-color: transparent;
+    border-radius: 15px;
+    border-color: black ;
+    border: solid;
+}
+
+.table-container {
+    z-index: 1;
+    position: relative;
+    margin: 20px;
+    margin-top: 0;
+}
+
+.table-container h3 {
+    margin-bottom: 10px;
+    font-size: 35px;
+    font-weight: bold;
+}
+.table-container h3:hover{
+    color: darkblue ;
+    cursor:pointer;
+}
+.table-container table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table-container th, .table-container td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-container th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.table-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.selected {
+    background-color: #cfcfcf;
+}
+
+footer {
+    position: relative;
+    z-index: 1;
+    padding: 10px;
+    width: 100%;
+    bottom: 0;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
